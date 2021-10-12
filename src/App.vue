@@ -1,28 +1,28 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <v-stepper-header style="margin-top:20px; background-color:black; height:50px">
+      <h1 style="color:red">SALSA DIGITAL</h1>
+      <router-link to="/purpose" style="color:white; ">Purpose</router-link>&nbsp;&nbsp;
+      <router-link to="/about" style="color:white">About</router-link>&nbsp;&nbsp;
+      <router-link to="/expertise" style="color:white">Expertise</router-link>&nbsp;&nbsp;
+      <router-link to="/insights" style="color:white">Insights</router-link>&nbsp;&nbsp;
+      <router-link to="/caseStudies" style="color:white">Case studies</router-link>&nbsp;&nbsp;
+      <router-link to="/services" style="color:white">Services</router-link>&nbsp;&nbsp;
+      <router-link to="/contact"  style="color:white">Contact</router-link>&nbsp;&nbsp;
+    </v-stepper-header>
+
+    <v-main>
+      <router-view />
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
+  name: "App",
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+  data: () => ({
+    //
+  }),
+};
+</script>
