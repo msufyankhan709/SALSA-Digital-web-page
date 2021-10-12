@@ -7,6 +7,7 @@ import insights from '../components/insights'
 import caseStudies from '../components/caseStudies'
 import services from '../components/services'
 import contact from '../components/contact'
+import about from '../components/about'
 
 Vue.use(VueRouter)
 
@@ -20,6 +21,11 @@ const routes = [
     path:'/purpose',
     name:'purpose',
     component:purpose
+  },
+  {
+    path:'/about',
+    name:'about',
+    component:about
   },
   {
     path:'/expertise',
