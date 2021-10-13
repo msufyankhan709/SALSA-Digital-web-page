@@ -1,4 +1,4 @@
-# first-project
+# SALSA-web-page
 
 ## Project setup
 ```
