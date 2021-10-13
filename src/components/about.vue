@@ -1,5 +1,6 @@
 <template>
-  <h2 style="background-color:green;">
+  <h3 style="background-color:black;margin-left:20px;margin-right:20px">
+    
     <h1 style="margin-left:120px; margin-top:20px; color:white">
       About
     </h1>
@@ -7,30 +8,29 @@
       style="margin-left:420px; margin-right:670px; margin-top:30px; color:white"
     >
       <router-link
-        style="text-decoration:none; color:blue;"
+        style="text-decoration:none; color:white;"
         to="/about/overview"
         >Overview</router-link
       ><v-divider></v-divider>
-      <router-link style="text-decoration:none; color:blue" to="/about/team"
+      <router-link style="text-decoration:none; color:white" to="/about/team"
         >Team</router-link
       ><v-divider></v-divider>
-      <router-link style="text-decoration:none; color:blue" to="/about/ourBoard"
+      <router-link style="text-decoration:none; color:white" to="/about/ourBoard"
         >Our board</router-link
       ><v-divider></v-divider>
-      <router-link style="text-decoration:none; color:blue" to="/about/news"
+      <router-link style="text-decoration:none; color:white" to="/about/news"
         >News & events</router-link
       ><v-divider></v-divider>
       <router-link
-        style="text-decoration:none; color:blue"
+        style="text-decoration:none; color:white"
         to="/about/contributions"
         >Contributions</router-link
       ><v-divider></v-divider>
-      <router-link style="text-decoration:none; color:blue" to="/about/careers"
+      <router-link style="text-decoration:none; color:white" to="/about/careers"
         >Careers at SALSA</router-link
-        
       >
     </p>
-  </h2>
+  </h3>
 </template>
 
 <script>
