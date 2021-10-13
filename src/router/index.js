@@ -8,6 +8,13 @@ import caseStudies from '../components/caseStudies'
 import services from '../components/services'
 import contact from '../components/contact'
 import about from '../components/about'
+import overview from '../components/overview'
+import team from '../components/team'
+import ourBoard from '../components/ourBoard'
+import news from '../components/news'
+import contributions from '../components/contributions'
+import careers from '../components/careers'
+
 
 Vue.use(VueRouter)
 
@@ -49,6 +56,36 @@ const routes = [
     path:'/contact',
     name:'contact',
     component:contact
+  },
+  {
+    path:'/about/overview',
+    name:'overview',
+    component:overview
+  },
+  {
+    path:'/about/team',
+    name:'team',
+    component:team
+  },
+  {
+    path:'/about/ourBoard',
+    name:'ourBoard',
+    component:ourBoard
+  },
+  {
+    path:'/about/news',
+    name:'news',
+    component:news
+  },
+  {
+    path:'/about/contributions',
+    name:'contributions',
+    component:contributions
+  },
+  {
+    path:'/about/careers',
+    name:'careers',
+    component:careers
   },
   {
     path: '/about',
