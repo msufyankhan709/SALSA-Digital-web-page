@@ -14,6 +14,7 @@ import ourBoard from '../components/ourBoard'
 import news from '../components/news'
 import contributions from '../components/contributions'
 import careers from '../components/careers'
+import search from '../components/search'
 
 
 Vue.use(VueRouter)
@@ -86,6 +87,11 @@ const routes = [
     path:'/about/careers',
     name:'careers',
     component:careers
+  },
+  {
+    path:'/search',
+    name:'search',
+    component:search
   },
   {
     path: '/about',
