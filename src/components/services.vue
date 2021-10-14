@@ -1,10 +1,14 @@
 <template>
-  <div class="mx-9">
-    <v-breadcrumbs :items="items">
-      <template v-slot:divider>
-        <v-icon>mdi-chevron-right</v-icon>
-      </template>
-    </v-breadcrumbs>
+  <div class="mt-9">
+    <div>
+      <v-btn text>
+        <v-breadcrumbs :items="items">
+          <template v-slot:divider>
+            <v-icon>mdi-chevron-right</v-icon>
+          </template>
+        </v-breadcrumbs>
+      </v-btn>
+    </div>
     <v-container class="pa-6">
       <v-row>
         <v-col cols="8">
@@ -150,13 +154,19 @@
         </v-row>
       </div>
     </v-container>
-    <v-footer dark>
+    <v-btn style="margin-left:1050px;height:45px;margin-top:100px;"
+      >Back to top<v-icon color="red darken-4" small
+        >mdi-arrow-up</v-icon
+      ></v-btn
+    >
+
+    <v-footer class="mt-4" dark>
       <v-row>
         <v-col cols="4">
-          <p>Purpose</p>
-          <p>Exertise</p>
-          <p>Case studies</p>
-          <p>Contact</p>
+          <p class="ml-4">Purpose</p>
+          <p class="ml-4">Exertise</p>
+          <p class="ml-4">Case studies</p>
+          <p class="ml-4">Contact</p>
         </v-col>
         <v-col cols="4">
           <p>About</p>
