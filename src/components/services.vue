@@ -108,7 +108,7 @@
                 gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
                 height="300px"
               >
-                <v-card-text>{{ card.title }}</v-card-text>
+                <v-card-title>{{ card.title }}</v-card-title>
               </v-img>
               <v-card-text v-text="card.text"></v-card-text>
               <v-card-actions>
@@ -118,7 +118,59 @@
           </v-col>
         </v-row>
       </div>
+      <v-col cols="8">
+        <h2 class="pt-8 mt-8">
+          Website and application development services
+        </h2>
+        <h3 class="text-subtitle-2 py-4">
+          Application build and migration services cover backend systems,
+          decoupled API-first platforms, frontend and design system theming,
+          module development, third-party integrations and test automation.
+        </h3>
+      </v-col>
+      <div>
+        <v-row class="width:150px">
+          <v-col cols="4" v-for="image in images" :key="image.title">
+            <v-card>
+              <v-img
+                :src="image.src"
+                class="white--text align-end"
+                gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+                height="300px"
+              >
+                <v-card-title v-text="image.title"></v-card-title>
+              </v-img>
+              <v-card-text v-text="image.text"></v-card-text>
+
+              <v-card-actions>
+                <v-spacer></v-spacer>
+              </v-card-actions>
+            </v-card>
+          </v-col>
+        </v-row>
+      </div>
     </v-container>
+    <v-footer dark>
+      <v-row>
+        <v-col cols="4">
+          <p>Purpose</p>
+          <p>Exertise</p>
+          <p>Case studies</p>
+          <p>Contact</p>
+        </v-col>
+        <v-col cols="4">
+          <p>About</p>
+          <p>Insights</p>
+          <p>Services</p>
+        </v-col>
+        <v-col cols="4">
+          <p>Connect with us</p>
+          <p>Twitter</p>
+          <p>LinkedIn</p>
+          <p>Facebook</p>
+        </v-col>
+      </v-row>
+    </v-footer>
   </div>
 </template>
 
@@ -166,7 +218,7 @@ export default {
       {
         title: "Site assessments",
         src:
-          "https://images.unsplash.com/photo-1491895200222-0fc4a4c35e18?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cGF0dGVybnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
+          "https://cdn11.bigcommerce.com/s-b7a27/products/8685/images/138417/diamond_seamless_wallpanels__53376.1619075123.386.513.jpg?c=2",
         flex: 12,
         text:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eaque architecto amet odit quod, dignissimos tempore officiis libero aut. Quod ex vel nulla corrupti accusantium eveniet eligendi facilis vero aliquid?",
@@ -180,27 +232,88 @@ export default {
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eaque architecto amet odit quod, dignissimos tempore officiis libero aut. Quod ex vel nulla corrupti accusantium eveniet eligendi facilis vero aliquid?",
       },
     ],
+    cardes: [
+      {
+        title: "User research",
+        src: "https://cdn.vuetifyjs.com/images/cards/house.jpg",
+        flex: 12,
+        text:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eaque architecto amet odit quod, dignissimos tempore officiis libero aut. Quod ex vel nulla corrupti accusantium eveniet eligendi facilis vero aliquid?",
+      },
+      {
+        title: "Visual interactive prototyping",
+        src: "https://cdn.vuetifyjs.com/images/cards/house.jpg",
+        flex: 12,
+        text:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eaque architecto amet odit quod, dignissimos tempore officiis libero aut. Quod ex vel nulla corrupti accusantium eveniet eligendi facilis vero aliquid?",
+      },
+      {
+        title: "Human centered design",
+        src: "https://cdn.vuetifyjs.com/images/cards/house.jpg",
+        flex: 12,
+        text:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eaque architecto amet odit quod, dignissimos tempore officiis libero aut. Quod ex vel nulla corrupti accusantium eveniet eligendi facilis vero aliquid?",
+      },
+      {
+        title: "Design thinking",
+        src: "https://cdn.vuetifyjs.com/images/cards/house.jpg",
+        flex: 12,
+        text:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eaque architecto amet odit quod, dignissimos tempore officiis libero aut. Quod ex vel nulla corrupti accusantium eveniet eligendi facilis vero aliquid?",
+      },
+    ],
+    images: [
+      {
+        title: "Website development",
+        src:
+          "https://cdn11.bigcommerce.com/s-b7a27/products/8685/images/138417/diamond_seamless_wallpanels__53376.1619075123.386.513.jpg?c=2",
+        flex: 12,
+        text:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eaque architecto amet odit quod, dignissimos tempore officiis libero aut. Quod ex vel nulla corrupti accusantium eveniet eligendi facilis vero aliquid?",
+      },
+      {
+        title: "Frontend theming",
+        src:
+          "https://cdn11.bigcommerce.com/s-b7a27/products/8685/images/138417/diamond_seamless_wallpanels__53376.1619075123.386.513.jpg?c=2",
+        flex: 12,
+        text:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eaque architecto amet odit quod, dignissimos tempore officiis libero aut. Quod ex vel nulla corrupti accusantium eveniet eligendi facilis vero aliquid?",
+      },
+      {
+        title: "Website and content migration",
+        src:
+          "https://cdn11.bigcommerce.com/s-b7a27/products/8685/images/138417/diamond_seamless_wallpanels__53376.1619075123.386.513.jpg?c=2",
+        flex: 12,
+        text:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eaque architecto amet odit quod, dignissimos tempore officiis libero aut. Quod ex vel nulla corrupti accusantium eveniet eligendi facilis vero aliquid?",
+      },
+      {
+        title: "Module development",
+        src:
+          "https://cdn11.bigcommerce.com/s-b7a27/products/8685/images/138417/diamond_seamless_wallpanels__53376.1619075123.386.513.jpg?c=2",
+        flex: 12,
+        text:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eaque architecto amet odit quod, dignissimos tempore officiis libero aut. Quod ex vel nulla corrupti accusantium eveniet eligendi facilis vero aliquid?",
+      },
+      {
+        title: "Third party integration",
+        src:
+          "https://cdn11.bigcommerce.com/s-b7a27/products/8685/images/138417/diamond_seamless_wallpanels__53376.1619075123.386.513.jpg?c=2",
+        flex: 12,
+        text:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eaque architecto amet odit quod, dignissimos tempore officiis libero aut. Quod ex vel nulla corrupti accusantium eveniet eligendi facilis vero aliquid?",
+      },
+      {
+        title: "QA and automated testing",
+        src:
+          "https://cdn11.bigcommerce.com/s-b7a27/products/8685/images/138417/diamond_seamless_wallpanels__53376.1619075123.386.513.jpg?c=2",
+        flex: 12,
+        text:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eaque architecto amet odit quod, dignissimos tempore officiis libero aut. Quod ex vel nulla corrupti accusantium eveniet eligendi facilis vero aliquid?",
+      },
+    ],
   }),
 };
 </script>
 
-<style>
-/* h3{
-  margin-left:0px;
-  margin-top:0px;
- }
- h1{
-   margin-top:100px;
-    margin-left:30px;
-     margin-right:700px
- }
- p{
-    margin-left:30px;
-    margin-right:670px
- }
- h2{
-    margin-top:100px;
-     margin-left:10px;
-     margin-right:700px;
- } */
-</style>
+<style></style>

@@ -1,10 +1,8 @@
 <template>
   <v-app>
-    <v-app-bar
-      style="margin-top:20px; margin-left:10px; margin-right:10px; background-color:black; height:70px"
-    >
+    <v-app-bar dark app class="my-4 mx-2">
       <v-img
-        style="width: 1.125rem; height: 4.4rem; margin-top:6px"
+        height="60px" width="60px"
         src="https://salsadigital.com.au/_nuxt/img/3e3115b.png"
       ></v-img>
       <router-link
