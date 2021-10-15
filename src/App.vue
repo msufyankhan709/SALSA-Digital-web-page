@@ -2,7 +2,8 @@
   <v-app>
     <v-app-bar dark app class="my-4 mx-2">
       <v-img
-        height="60px" width="60px"
+        height="60px"
+        width="60px"
         src="https://salsadigital.com.au/_nuxt/img/3e3115b.png"
       ></v-img>
       <router-link
@@ -49,6 +50,27 @@
     <v-main>
       <router-view />
     </v-main>
+    <v-footer class="mt-4 mx-4" dark>
+      <v-row>
+        <v-col cols="4">
+          <p class="ml-4">Purpose</p>
+          <p class="ml-4">Exertise</p>
+          <p class="ml-4">Case studies</p>
+          <p class="ml-4">Contact</p>
+        </v-col>
+        <v-col cols="4">
+          <p>About</p>
+          <p>Insights</p>
+          <p>Services</p>
+        </v-col>
+        <v-col cols="4">
+          <p>Connect with us</p>
+          <p>Twitter</p>
+          <p>LinkedIn</p>
+          <p>Facebook</p>
+        </v-col>
+      </v-row>
+    </v-footer>
   </v-app>
 </template>
 

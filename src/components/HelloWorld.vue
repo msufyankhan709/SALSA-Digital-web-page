@@ -120,7 +120,7 @@
     <div class="mx-16 px-16">
       <v-row class="">
         <v-col cols="4" v-for="image in images" :key="image.title">
-          <v-card height="400px">
+          <v-card height="350px">
             <div class="ml-12 pl-12">
               <v-img
                 :src="image.src"
@@ -136,7 +136,47 @@
               v-text="image.title"
             ></v-card-title>
             <v-card-text v-text="image.text"></v-card-text>
+            <v-btn class="pl-7 ml-5" dark>{{ image.button }}</v-btn>
 
+            <v-card-actions>
+              <v-spacer></v-spacer>
+            </v-card-actions>
+          </v-card>
+        </v-col>
+      </v-row>
+    </div>
+    <v-col class="ml-12 pl-12" cols="6">
+      <h2 class="font-weight-bold text-h5 ml-8 pb-4 mt-16">
+        Projects with purpose
+      </h2>
+
+      <p class="font-weight-medium text-subtitle-1 ml-8">
+        Partnering with many federal and state government agencies to help them
+        become more open, more connected and more consolidated.
+      </p>
+    </v-col>
+    <div class="mx-16 px-16">
+      <v-row class="">
+        <v-col cols="4" v-for="pic in pics" :key="pic.title">
+          <v-card height="480px">
+            <div class="">
+              <v-img
+                :src="pic.src"
+                class="white--text align-end"
+                gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+                height="200px"
+                width="350px"
+              >
+              </v-img>
+            </div>
+            <v-card-title v-text="pic.title"></v-card-title>
+            <v-card-text v-text="pic.text"></v-card-text>
+            <v-col class=" mt-6 pt-6">
+              <span class="text-subtitle-1 font-weight-bold"
+                >View case study</span
+              >
+              <v-icon color="red darken-4" small>mdi-arrow-right</v-icon>
+            </v-col>
             <v-card-actions>
               <v-spacer></v-spacer>
             </v-card-actions>
@@ -165,6 +205,7 @@ export default {
           "https://content.salsadigital.com.au/sites/default/files/2020-04/services-innovators.png",
         text:
           "co-creating with innovators to consolidate, create efficiencies, and drive meaningful change to ultimately digitally transform.",
+        button: "Services for the innovator",
       },
       {
         title: "The communicator",
@@ -172,6 +213,7 @@ export default {
           "https://content.salsadigital.com.au/sites/default/files/2020-04/services-marketers.png",
         text:
           "Teaming up with communicators to better connect and engage with industry and citizens.It is meaningful",
+        button: "Services for the communicator",
       },
       {
         title: "The technologist",
@@ -179,6 +221,33 @@ export default {
           "https://content.salsadigital.com.au/sites/default/files/2020-04/services-technologist.png",
         text:
           "Geeking out with technologists to consolidate fragmented platforms that are secure, efficient fast and can scale.",
+        button: "Services for the technologist",
+      },
+    ],
+    pics: [
+      {
+        title: "GovCMS-whole-of government content management platform",
+        src:
+          "https://content.salsadigital.com.au/sites/default/files/2020-04/Building%20the%20second%20generation%20GovCMS.png",
+        text:
+          "co-creating with innovators to consolidate, create efficiencies, and drive meaningful change to digitally transform.",
+        button: "Services for the innovator",
+      },
+      {
+        title: "Office of eSafety-GovVMS",
+        src:
+          "https://content.salsadigital.com.au/sites/default/files/2020-03/442-esafety-Case-Study-Cards.png",
+        text:
+          "Teaming up with communicators to better connect and engage with industry and citizens.It is meaningful,it helps us more connected and more consolidated",
+        button: "Services for the communicator",
+      },
+      {
+        title: "Australian classification-GovCMs",
+        src:
+          "https://content.salsadigital.com.au/sites/default/files/2020-04/Site%20migration%20and%20improved%20user%20journeys%20for%20classification%20copy.png",
+        text:
+          "Geeking out with technologists to consolidate fragmented platforms that are secure, efficient fast and can scale.it helps us more connected and more consolidated",
+        button: "Services for the technologist",
       },
     ],
   }),
