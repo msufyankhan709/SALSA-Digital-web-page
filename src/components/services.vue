@@ -153,11 +153,6 @@
         </v-row>
       </div>
     </v-container>
-    <v-btn style="margin-left:1050px;height:45px;margin-top:100px;"
-      >Back to top<v-icon color="red darken-4" small
-        >mdi-arrow-up</v-icon
-      ></v-btn
-    >
     <button
       type="button"
       class="transition-swing v-btn v-btn--bottom v-btn--is-elevated v-btn--fab v-btn--fixed v-btn--has-bg v-btn--right v-btn--round theme--light v-size--large primary"
@@ -179,6 +174,11 @@
             ></path></svg></span
       ></span>
     </button>
+    <img
+      src="/_nuxt/img/d8e83a0.png"
+      alt="Aboriginal flag"
+      class="rpl-acknowledgement__flag"
+    />
   </div>
 </template>
 
