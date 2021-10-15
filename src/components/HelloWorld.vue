@@ -184,6 +184,41 @@
         </v-col>
       </v-row>
     </div>
+    <div class="mx-16 px-16 py-16">
+      <v-card>
+        <v-container>
+          <v-row>
+            <v-col cols="4">
+              <div class="rpl-card-content__image-wrapper my-4 ml-4">
+                <img
+                  alt=""
+                  src="https://content.salsadigital.com.au/sites/default/files/2020-09/careers-about-salsa-thumb.png"
+                  height="200px"
+                  width="300px"
+                />
+              </div>
+            </v-col>
+            <v-col cols="8" class="my-4">
+              <h2 class="font-weight-bold text-h5">
+                Careers at SALSA
+              </h2>
+
+              <p class="font-weight-medium text-subtitle-2 mr-16 pr-16">
+                Become part of SALSA family and help us help governments become
+                more open, more connected and more consolidated.Enjoy the SALSA
+                culture of transparency, authenticity,accountbility and join us
+                to be part of values-driven company that genuinely wants to do
+                great work, push the boundries and Contribute to government.
+              </p>
+              <v-col class=" mt-8 pt-8">
+                <span class="text-subtitle-1 font-weight-bold">Subscribe</span>
+                <v-icon color="red darken-4" small>mdi-arrow-right</v-icon>
+              </v-col>
+            </v-col>
+          </v-row>
+        </v-container>
+      </v-card>
+    </div>
   </div>
 </template>
 

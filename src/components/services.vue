@@ -152,6 +152,30 @@
           </v-col>
         </v-row>
       </div>
+      <h2 class="pt-12 mt-12 mb-4">
+        Domain Services
+      </h2>
+      <div>
+        <v-row class="width:150px">
+          <v-col cols="4" v-for="service in services" :key="service.title">
+            <v-card>
+              <v-img
+                :src="service.src"
+                class="white--text align-end"
+                gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+                height="300px"
+              >
+                <v-card-title v-text="service.title"></v-card-title>
+              </v-img>
+              <v-card-text v-text="service.text"></v-card-text>
+
+              <v-card-actions>
+                <v-spacer></v-spacer>
+              </v-card-actions>
+            </v-card>
+          </v-col>
+        </v-row>
+      </div>
     </v-container>
     <button
       type="button"
@@ -174,11 +198,6 @@
             ></path></svg></span
       ></span>
     </button>
-    <img
-      src="/_nuxt/img/d8e83a0.png"
-      alt="Aboriginal flag"
-      class="rpl-acknowledgement__flag"
-    />
   </div>
 </template>
 
@@ -226,7 +245,7 @@ export default {
       {
         title: "Site assessments",
         src:
-          "https://cdn11.bigcommerce.com/s-b7a27/products/8685/images/138417/diamond_seamless_wallpanels__53376.1619075123.386.513.jpg?c=2",
+          "https://images.unsplash.com/photo-1491895200222-0fc4a4c35e18?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cGF0dGVybnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
         flex: 12,
         text:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eaque architecto amet odit quod, dignissimos tempore officiis libero aut. Quod ex vel nulla corrupti accusantium eveniet eligendi facilis vero aliquid?",
@@ -316,6 +335,50 @@ export default {
         src:
           "https://cdn11.bigcommerce.com/s-b7a27/products/8685/images/138417/diamond_seamless_wallpanels__53376.1619075123.386.513.jpg?c=2",
         flex: 12,
+        text:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eaque architecto amet odit quod, dignissimos tempore officiis libero aut. Quod ex vel nulla corrupti accusantium eveniet eligendi facilis vero aliquid?",
+      },
+    ],
+    services: [
+      {
+        title: "Open source",
+        src:
+          "https://content.salsadigital.com.au/sites/default/files/2020-11/Thumb%20-%20expertise%20-%20CMS%20content%20management%20system-1.png",
+        text:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eaque architecto amet odit quod, dignissimos tempore officiis libero aut. Quod ex vel nulla corrupti accusantium eveniet eligendi facilis vero aliquid?",
+      },
+      {
+        title: "Design systems",
+        src:
+          "https://content.salsadigital.com.au/sites/default/files/2020-11/Thumb%20-%20expertise%20-%20design%20systems.png",
+        text:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eaque architecto amet odit quod, dignissimos tempore officiis libero aut. Quod ex vel nulla corrupti accusantium eveniet eligendi facilis vero aliquid?",
+      },
+      {
+        title: "Open APIs",
+        src:
+          "https://content.salsadigital.com.au/sites/default/files/2020-11/Thumb%20-%20expertise%20-%20Open%20APIs.png",
+        text:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eaque architecto amet odit quod, dignissimos tempore officiis libero aut. Quod ex vel nulla corrupti accusantium eveniet eligendi facilis vero aliquid?",
+      },
+      {
+        title: "Website development",
+        src:
+          "https://content.salsadigital.com.au/sites/default/files/2020-07/services-web-development-thumbnail.png",
+        text:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eaque architecto amet odit quod, dignissimos tempore officiis libero aut. Quod ex vel nulla corrupti accusantium eveniet eligendi facilis vero aliquid?",
+      },
+      {
+        title: "Headless CMS",
+        src:
+          "https://content.salsadigital.com.au/sites/default/files/2020-11/Thumb%20-%20expertise%20-%20headless%20cms.png",
+        text:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eaque architecto amet odit quod, dignissimos tempore officiis libero aut. Quod ex vel nulla corrupti accusantium eveniet eligendi facilis vero aliquid?",
+      },
+      {
+        title: "Mobile applications",
+        src:
+          "https://content.salsadigital.com.au/sites/default/files/2020-11/Thumb%20-%20expertise%20-%20Mobile%20Applications.png",
         text:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eaque architecto amet odit quod, dignissimos tempore officiis libero aut. Quod ex vel nulla corrupti accusantium eveniet eligendi facilis vero aliquid?",
       },
