@@ -11,7 +11,7 @@
     </div>
     <v-container class="pa-6">
       <v-row>
-        <v-col cols="8">
+        <v-col cols="6">
           <h1 class="font-weight-bold text-h2 mt-16 pt-16">
             Services
           </h1>
@@ -49,7 +49,6 @@
           improved content editing experience and continued security and support
           by preparing for your GovCMS Drupal 9 upgrade now.
         </p>
-
         <a
           ><v-btn dark>
             Explore GovCMS D9 upgrade services

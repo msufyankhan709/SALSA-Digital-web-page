@@ -15,7 +15,10 @@
     >
       Starting with why
     </h1>
-    <p style="margin-left:120px; margin-right:670px">
+    <p
+      style="margin-left:120px; margin-right:670px"
+      class="font-weight-bold text-h5"
+    >
       Fragmentation, silos and proprietary technologies provide an opportunity
       to consolidate, connect and open governments to ultimately become more
       efficient, engaged, transparent and innovative.
